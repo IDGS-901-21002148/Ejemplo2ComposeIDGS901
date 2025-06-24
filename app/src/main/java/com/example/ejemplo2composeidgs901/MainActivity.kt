@@ -27,7 +27,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
-import com.example.ejemplo2composeidgs901.ui.theme.Ejemplo2ComposeIDGS901Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -66,7 +65,7 @@ class MainActivity : ComponentActivity() {
             )
             Spacer(modifier = Modifier.height(16.dp))
             Button(onClick = {
-                val nombre = nombre.ifBlank { "Landin" }
+                val nombre = nombre.ifBlank { "Alejandro" }
                 navController.navigate("detalle/$nombre")
             }) {
                 Text("Ir a detalle con nombre")
